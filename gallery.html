@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game-gallery</title>
+    <link rel="stylesheet" href="game.css">
+    
+</head>
+<body>
+    
+
+    
+    <div class="gallery gallery9 hide">
+        <div class="part1">
+        <section class="group group1">
+            <img src="babay.jpg" alt="">
+            <img src="batot.jpg" alt="">
+            <img src="blackduck.jpg" alt="">
+            <img src="droopy.jpg" alt="">
+            <img src="smalldog.jpg" alt="">
+            <img src="dog.jpg" alt="">
+            <img src="tom.jpg" alt="">
+            <img src="gery.jpg" alt="">
+            <img src="OIP.jpg" alt="">
+
+        
+        <button class="groupBtn">group 1</button>
+        
+        </section>
+        
+        <section class="group group2">
+            <img src="smalldog.jpg" alt="">
+            <img src="dog.jpg" alt="">
+            <img src="tom.jpg" alt="">
+            <img src="gery.jpg" alt="">
+            <img src="OIP.jpg" alt="">
+                <img src="OIP (1).jpg" alt="">
+                <img src="OIP (2).jpg" alt="">
+                <img src="twety.jpg" alt="">
+                <img src="th.jpg" alt="">
+
+        
+            <button class="groupBtn">group 2</button>
+        
+        
+        </section>
+        
+        </div>
+        
+        <div class="part2">
+            <section class="group group1">
+                <img src="OIP.jpg" alt="">
+                <img src="OIP (1).jpg" alt="">
+                <img src="OIP (2).jpg" alt="">
+                <img src="twety.jpg" alt="">
+                <img src="batot.jpg" alt="">
+                <img src="blackduck.jpg" alt="">
+                <img src="droopy.jpg" alt="">
+                <img src="smalldog.jpg" alt="">
+                <img src="dog.jpg" alt="">
+        
+            
+        <button class="groupBtn">group 3</button>
+            
+            
+            </section>
+            
+            <section class="group group2">
+                <img src="th.jpg" alt="">
+                <img src="dop.jpg" alt="">
+                <img src="pica.jpg" alt="">
+                <img src="download.jpg" alt="">
+                <img src="smalldog.jpg" alt="">
+                <img src="dog.jpg" alt="">
+                <img src="tom.jpg" alt="">
+                <img src="gery.jpg" alt="">
+                <img src="OIP.jpg" alt="">
+            
+        <button class="groupBtn">group 4</button>
+            
+            
+            </section>
+            
+            </div>
+        
+            </div>
+        
+        
+
+    <div class="gallery gallery4">
+<div class="part1">
+<section class="group group1">
+    <img src="babay.jpg" alt="">
+    <img src="batot.jpg" alt="">
+    <img src="blackduck.jpg" alt="">
+    <img src="droopy.jpg" alt="">
+
+<button class="groupBtn">group 1</button>
+
+</section>
+
+<section class="group group2">
+    <img src="smalldog.jpg" alt="">
+    <img src="dog.jpg" alt="">
+    <img src="tom.jpg" alt="">
+    <img src="gery.jpg" alt="">
+
+    <button class="groupBtn">group 2</button>
+
+
+</section>
+
+</div>
+
+<div class="part2">
+    <section class="group group1">
+        <img src="OIP.jpg" alt="">
+        <img src="OIP (1).jpg" alt="">
+        <img src="OIP (2).jpg" alt="">
+        <img src="twety.jpg" alt="">
+
+    
+<button class="groupBtn">group 3</button>
+    
+    
+    </section>
+    
+    <section class="group group2">
+        <img src="th.jpg" alt="">
+        <img src="dop.jpg" alt="">
+        <img src="pica.jpg" alt="">
+        <img src="download.jpg" alt="">
+    
+<button class="groupBtn">group 4</button>
+    
+    
+    </section>
+    
+    </div>
+
+    </div>
+
+
+
+    <script> 
+   let  allGroupBtns = document.querySelectorAll(".groupBtn")
+ 
+
+allGroupBtns.forEach( (item) => {
+    
+
+    item.addEventListener("click", (eo) => {
+    
+        window.location.href = "http://127.0.0.1:5507/play.html"
+    })
+})
+
+
+// async function getData(){
+    
+//     try{
+    
+//         let usersResponse =await fetch("https://jsonplaceholder.typicode.com/users") 
+        
+//          let users =await usersResponse.json()
+
+
+//         let postsResponse =await fetch("https://jsonplaceholder.typicode.com/posts") 
+        
+//          let userPosts =await postsResponse.json()
+
+//          let commentsResponse =await fetch("https://jsonplaceholder.typicode.com/comments") 
+        
+//          let userComments =await commentsResponse.json()
+
+      
+
+//       let result = users.map((ob)=>{return{"userId": ob.id,"username":ob.username , "email":ob.email, "company":ob.company.name, "address":ob.address.city}});
+//       console.log(result)
+
+
+
+//     users.forEach(item => {
+//         item.usersWithposts = userPosts.filter((post)=>{
+
+//             post.userId == item.userId
+
+//           })
+
+//       });
+
+//       console.log(users.usersWithposts)
+      
+
+      
+//       result.forEach((ob)=>{
+
+
+
+//  ob.posts = userPosts.filter((pos)=>pos.userId == ob.userId).map((post)=>{return {"title": post.title, "id" : post.id }});
+
+
+// console.log(result)
+
+//  ob.posts.forEach((post)=>{
+//      post.commentsCount = userComments.filter((com)=> com.postId == post.id).length
+//  })
+
+//       });
+//       console.log(result)
+
+//         return result;
+//         } 
+        
+    
+//     catch(error){
+//         divElement.innerText = error
+//     }
+    
+//  }
+    </script>
+</body>
+</html>

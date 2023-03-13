@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sodoko-game</title>
+    <link rel="stylesheet" href="game.css">
+    
+    
+
+</head>
+<body>
+
+    <div id="chooselevel">
+        <form class="form" name="form" action="http://127.0.0.1:5507/play.html" method="post">
+            
+                <label class="show">User Name </label> 
+                <div class="d-flex">
+             <input type="text" name="username" id="user_login" class="username show" value="eman" size="20" tabindex="10" />
+            <div id="required" class="required hide">Required</div> 
+            </div>
+                <label class="show">Select Level </label> 
+        <select class="show" name="select" id="">
+        
+            <option name= "level1"  value="level1">level1</option>
+        
+        </select>    
+        
+        <input id="login" class="login show" disabled type="button" value="Login">
+        
+        </form>
+        </div>
+
+
+        <div >
+
+
+        </div>
+
+
+
+        
+
+    <div class="gallery gallery4 hide">
+<div class="part1">
+<section class="group group1">
+    <div class="imgContainer">
+    <img src="g4-1/1.jpg" alt="">
+    <img src="g4-1/2.jpg" alt="">
+    <img src="g4-1/3.jpg" alt="">
+    <img src="g4-1/4.jpg" alt="">
+
+</div>
+<button class="groupBtn groupBtn4" onclick="activeGroup4Btn1()">group 1</button>
+
+</section>
+
+<section class="group group2">
+    <div class="imgContainer">
+
+    <img src="g4-2/1.jpg" alt="">
+    <img src="g4-2/2.jpg" alt="">
+    <img src="g4-2/3.jpg" alt="">
+    <img src="g4-2/4.jpg" alt="">
+
+</div>
+    <button class="groupBtn groupBtn4" onclick="activeGroup4Btn2()">group 2</button>
+
+
+</section>
+
+</div>
+
+<div class="part2">
+    <section class="group group1">
+    <div class="imgContainer">
+
+        <img src="g4-3/1.jpg" alt="">
+        <img src="g4-3/2.jpg" alt="">
+        <img src="g4-3/3.jpg" alt="">
+        <img src="g4-3/4.jpg" alt="">
+
+
+</div>
+    
+<button class="groupBtn groupBtn4" onclick="activeGroup4Btn3()">group 3</button>
+    
+    
+    </section>
+    
+    <section class="group group2">
+    <div class="imgContainer">
+
+        <img src="g4-4/1.jpg" alt="">
+        <img src="g4-4/2.jpg" alt="">
+        <img src="g4-4/3.jpg" alt="">
+        <img src="g4-4/4.jpg" alt="">
+
+</div>
+    
+<button class="groupBtn groupBtn4" onclick="activeGroup4Btn4()">group 4</button>
+    
+    
+    </section>
+    
+    </div>
+
+    </div>
+
+
+<!-- //////////////redirect to playGame////////////// -->
+
+<div class="">
+   
+
+    <div class="playcontainer playcontainer4 d-flex hide">
+<div id="userGroup" class="userGroup">
+    
+<div class="d-flex-col">
+    <div class="pic-4 pic1" id="pic1"></div>
+
+</div>
+
+<div class="picNum">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+</div>
+
+
+</div>
+
+<div class="timContainer d-flex">
+
+    <div id="time4" class="time">60</div>
+
+<p id="welcome" class="welcome">welcome username</p>
+</div>
+
+</div>
+
+
+<section class="sodokoContainer  hide">
+
+
+    
+<div class="sodoko" id="sodoko ">
+
+
+    <table class="sodokoTable table4 hide">
+
+<tr>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+
+</tr>
+<tr>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+
+</tr>
+<tr>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+
+</tr>
+<tr>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+    <td>55</td>
+
+</tr>
+
+    </table>
+
+
+</div>
+
+<div id="start"  class="startDiv"><button class="start">Start</button></div>
+
+</section>    
+
+
+</div>   
+    
+
+<script  src="game.js"></script>
+
+</body>
+</html>
